@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>折腾一年，我终于找到了地平线4闪退的终极解决办法！</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            margin: 20px 0;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eaeaea;
+            font-size: 28px;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin: 25px 0 15px 0;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .solution {
+            background-color: #e8f4fc;
+            border-left: 4px solid #2980b9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .solution p {
+            margin: 0;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .conclusion {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #eee;
+        }
+        
+        .interaction {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ddd;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>折腾一年，我终于找到了地平线4闪退的终极解决办法！</h1>
+        
+        <h2>背景介绍</h2>
+        <p>我的第一个Steam游戏就是《极限竞速：地平线4》。当时正值游戏即将绝版，冲着收藏价值就入手了。没想到，这才是"折腾"的开始。</p>
+        
+        <h2>问题描述</h2>
+        <p>游戏能正常打开，也能玩上一小时左右，但之后就会<strong>随机闪退</strong>，毫无规律。风扇狂转，发热异常，即使关闭狂暴模式也没用。</p>
+        
+        <h2>尝试过的失败方法</h2>
+        <ul>
+            <li>更换Windows系统（Win10/Win11各版本，甚至Linux）</li>
+            <li>检查硬件问题（商务本、游戏本都试过，排除硬件老旧）</li>
+            <li>更新/重装显卡驱动（包括特定版本51748）</li>
+            <li>保持系统组件完整（OneDrive、XBox组件均保留）</li>
+            <li>裸机测试（不装任何第三方软件）</li>
+            <li>查看系统事件查看器（仅提示应用崩溃，无具体原因）</li>
+        </ul>
+        
+        <h2>最终解决方案</h2>
+        <p>偶然看到一个思路：<strong>CPU超频可能导致高负载发热异常</strong>。虽然无法直接降频（CPU出厂固定频率），但可以通过以下设置显著改善：</p>
+        <div class="solution">
+            <p>控制面板 → 电源选项 → 更改计划设置 → 更改高级电源设置 → 处理器电源管理 → 最大处理器状态 → 降低至70%</p>
+        </div>
+        <p>之后风扇噪音明显降低，闪退频率大大减少，游戏体验恢复正常！</p>
+        
+        <h2>总结与感想</h2>
+        <div class="conclusion">
+            <p>这一年尝试了无数方法，最终没想到是一个电源设置解决了问题。电脑优化就是这样，不是一步到位，而是不断尝试、不断变好。快乐来自于折腾的过程！</p>
+        </div>
+        
+        <div class="interaction">
+            <p>大家有没有遇到过类似问题？欢迎评论区分享你的经历~</p>
+        </div>
+    </div>
+</body>
+</html>
