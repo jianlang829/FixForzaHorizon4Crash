@@ -1,2 +1,30 @@
-# FixForzaHorizon4Crash
-**Fix Forza Horizon 4 Crashes**   A collection of troubleshooting steps, registry fixes, and community solutions to resolve frequent crashes in Forza Horizon 4 on PC.
+# 地平线4闪退问题解决方案
+
+## 问题描述
+《极限竞速：地平线4》游戏运行约一小时后随机闪退，伴随风扇狂转与设备异常发热。
+
+## 已验证无效的解决方案
+- 更换Windows/Linux系统
+- 检查或更换硬件
+- 更新/重装显卡驱动
+- 保留或重装系统组件（如OneDrive、XBox组件）
+- 纯净系统环境测试
+- 查看系统事件日志
+
+## 最终有效方案
+调整电源选项中的处理器最大状态：
+
+1. 打开`控制面板` → `电源选项`
+2. 点击`更改计划设置` → `更改高级电源设置`
+3. 找到`处理器电源管理` → `最大处理器状态`
+4. 将数值降至`70%`
+
+## 效果
+- 风扇噪音显著降低
+- 闪退频率大幅减少
+- 游戏体验恢复正常
+
+## 说明
+该方法通过限制CPU高负载运行时的峰值性能，有效控制发热，从而避免因过热导致的游戏闪退。
+
+> 欢迎在评论区分享你的体验或类似问题的解决方法！
